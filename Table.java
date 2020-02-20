@@ -1,3 +1,5 @@
+package JavaRouletteGame;
+
 class Table {
 
 	private static int[][] numbers = new int[12][3];

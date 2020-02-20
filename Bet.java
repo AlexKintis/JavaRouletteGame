@@ -1,18 +1,18 @@
+package JavaRouletteGame;
+
 import java.util.Scanner;
 
 class Bet{
-
-	Scanner sc = new Scanner(System.in);
 
 	Bet() {
 			Game.bet = betInputCheck(Game.money);
 			if(Game.bet != 0){
 				betType();
 				System.out.print("Which bet type you choose? : ");
-				Game.betType = sc.nextInt();
+				Game.betType = main.sc.nextInt();
 				while(Game.betType < 1 || Game.betType > 10) {
 					System.out.print("Wrong Choice!!\n" + "Enter your choice (1-10): ");
-					Game.betType = sc.nextInt();
+					Game.betType = main.sc.nextInt();
 				}
 			} else {
 				Game.betType = 0;
@@ -22,11 +22,11 @@ class Bet{
 	int betInputCheck(double money) {
 
 		System.out.print("Enter your bet(0-10000): ");
-		int bet = sc.nextInt();
+		int bet = main.sc.nextInt();
 
 		while(bet > money){
 			System.out.print("\nInsufficient Credits\n" + "Please enter a valid amount: ");
-			bet = sc.nextInt();
+			bet = main.sc.nextInt();
 		}
 		return bet;
 

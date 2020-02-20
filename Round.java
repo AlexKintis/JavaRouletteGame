@@ -1,3 +1,5 @@
+package JavaRouletteGame;
+
 import java.util.Random;
 
 public class Round {
@@ -30,7 +32,7 @@ public class Round {
 
         void straight() {
             System.out.print("\nYou choosed straight bet!!\nEnter a number (0-36): ");
-            Game.numbers.add(Game.sc.nextInt());
+            Game.numbers.add(main.sc.nextInt());
             System.out.println(Game.numbers);
         }
 
