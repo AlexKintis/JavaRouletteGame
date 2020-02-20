@@ -1,4 +1,4 @@
-# Roulette the Game "Incomplete"
+# Roulette the Game "Under Progress"
 
 ## What it does 
 It is the normal **European roulette** but in **tui** mode. This is not something special.
